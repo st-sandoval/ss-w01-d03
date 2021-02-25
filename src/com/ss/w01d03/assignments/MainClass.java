@@ -13,7 +13,7 @@ public class MainClass {
 	
 	static String directoryPath = "./";
 	
-	static String writeFilePath = "./texttext.txt";
+	static String writeFilePath = "./testtext.txt";
 	static String writeText = "this is appended yes yes";
 
 	public static void main(String[] args) {
@@ -23,6 +23,10 @@ public class MainClass {
 		
 		Appender appendee = new Appender();
 		
-		appendee.appendToFile(writeFilePath, writeText);
+		try{
+			appendee.appendToFile(writeFilePath, writeText);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 }
