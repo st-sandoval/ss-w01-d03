@@ -7,18 +7,8 @@ import java.io.File;
 
 
 public class DirReader {
-//	String dirName;
-//	
-//	DirReader(String dirName){
-//		try {
-//			this.dirName = dirName;
-//		}catch(Exception e) {
-//			e.printStackTrace();
-//		}
-//	}
 
-	public String[] readDirectory(final File directory) {
-		
+	public void readDirectory(File directory) {
 		
 		ArrayList<String> directoryList = new ArrayList();
 		
